@@ -1,14 +1,15 @@
 package exo.ourLinkedList;
 
 public class Node {
-    private int data;
-    private Node next;
+    public int data;
+    public Node next;
 
     public Node(int data) {
         this.data = data;
     }
 
-    public void appendToTail(int data) {
-        // à implémentez
+    @Override
+    public String toString() {
+        return data + " -> ";
     }
 }
